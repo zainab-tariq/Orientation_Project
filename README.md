@@ -18,13 +18,7 @@ This project is inspired by visual artists such as Christopher Bauder and Shohei
 ---
 ## Reference images
 
-![DeepWeb by Christopher Bauder and Robert Henke](img/deepweb-12hr.jpg)
-
-![DeepWeb by Christopher Bauder and Robert Henke](img/deepweb-04hr.jpg)
-
-
-DeepWeb by Christopher Bauder and Robert Henke
-
+https://github.com/zainab-tariq/Orientation_Project/wiki/Inspiration-and-References
 
 ---
 ## Scenarios
