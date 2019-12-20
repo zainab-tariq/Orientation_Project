@@ -25,8 +25,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - <noninit>: 0
-    - _InvFade: 3
-    - _Rim: 2
+    - _InvFade: 1.58
+    - _Rim: 1.71
     m_Colors:
     - <noninit>: {r: 0, g: 2.0182498, b: 1e-45, a: -1.8497637e-28}
     - _TintColor: {r: 1, g: 0.12717617, b: 0, a: 0.5}
