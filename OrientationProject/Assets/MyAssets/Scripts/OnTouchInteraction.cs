@@ -17,21 +17,34 @@ namespace Valve.VR.InteractionSystem.Sample
 
             private Interactable interactable;
             private AudioSource audio;
+
+            public GameObject sphereAndLaser;
+            Animator anim;
         //-------------------------------------------------
         void Awake()
             {
+                anim = sphereAndLaser.GetComponent<Animator>();
                 interactable = this.GetComponent<Interactable>();
                 audio = this.GetComponent<AudioSource>();
-        }
+            }
 
+            IEnumerator waitTillAudioFinish(){
+                yield return new WaitForSeconds(audio.clip.length);
+                this.gameObject.SetActive(false);
+            }
 
             //-------------------------------------------------
             // Called when a Hand starts hovering over this object
             //-------------------------------------------------
             private void OnHandHoverBegin(Hand hand)
             {
+                this.gameObject.GetComponent<Animator>().enabled = false;
+                if(this.gameObject.tag == "StartSphere"){
+                        anim.Play("SphereAndLaserAnimation1");
+                }
+
                 audio.Play();
-                this.GetComponent<MeshRenderer>().enabled = false;
+                StartCoroutine("waitTillAudioFinish");
             }
 
 

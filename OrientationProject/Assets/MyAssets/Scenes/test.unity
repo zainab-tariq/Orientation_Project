@@ -6242,13 +6242,14 @@ GameObject:
   - component: {fileID: 730903367}
   - component: {fileID: 730903366}
   - component: {fileID: 730903365}
-  - component: {fileID: 730903364}
-  - component: {fileID: 730903368}
-  - component: {fileID: 730903363}
   - component: {fileID: 730903362}
+  - component: {fileID: 730903364}
+  - component: {fileID: 730903363}
+  - component: {fileID: 730903368}
+  - component: {fileID: 730903369}
   m_Layer: 0
   m_Name: SphereInteractionExample
-  m_TagString: Untagged
+  m_TagString: StartSphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6265,6 +6266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d418321421c0742a49ac2aeab8218d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sphereAndLaser: {fileID: 181615868}
 --- !u!114 &730903363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6314,7 +6316,7 @@ MonoBehaviour:
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
   handFollowTransform: 1
-  highlightOnHover: 1
+  highlightOnHover: 0
   hideHighlight: []
   hoverPriority: 0
 --- !u!23 &730903364
@@ -6335,7 +6337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e90f10e44a186a49a00679d068515ed, type: 2}
+  - {fileID: 2100000, guid: 363b7acf25398684c82256cc8cc3d4bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6385,8 +6387,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730903361}
   m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.9238796}
-  m_LocalPosition: {x: 3.2171576, y: 1.72, z: 4.416156}
-  m_LocalScale: {x: 2.8339787, y: 2.8339784, z: 2.8339794}
+  m_LocalPosition: {x: 3.2171576, y: 1.72, z: -9.3}
+  m_LocalScale: {x: 1.7220389, y: 1.7220387, z: 1.7220393}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -6401,7 +6403,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c675992d085fdd243a7f6441889ae0d8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 86ab87ea7a156314cae034b6635891cd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6487,6 +6489,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &730903369
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730903361}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b379908695adb54ab5aa77646fba807, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &732650473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8233,11 +8254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f80c2c124645f54897b7c60907c38b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
 --- !u!4 &1032135266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4045303073169415998, guid: d7b097c1557c9435eb6331f5d028db7f,
