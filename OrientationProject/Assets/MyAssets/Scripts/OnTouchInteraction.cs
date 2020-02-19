@@ -28,11 +28,6 @@ namespace Valve.VR.InteractionSystem.Sample
                 audio = this.GetComponent<AudioSource>();
             }
 
-            IEnumerator waitTillAudioFinish(){
-                yield return new WaitForSeconds(audio.clip.length);
-                this.gameObject.SetActive(false);
-            }
-
             //-------------------------------------------------
             // Called when a Hand starts hovering over this object
             //-------------------------------------------------
@@ -40,13 +35,18 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 this.gameObject.GetComponent<Animator>().enabled = false;
                 if(this.gameObject.tag == "StartSphere"){
-                        anim.Play("SphereAndLaserAnimation1");
+                        anim.Play("FirstMainAnim");
+                        this.GetComponent<MeshRenderer>().enabled = false;
                 }
 
                 audio.Play();
-                StartCoroutine("waitTillAudioFinish");
+                //StartCoroutine("waitTillAudioFinish"); //deactivate gameobject once the audio is played
             }
 
+            IEnumerator waitTillAudioFinish(){
+                yield return new WaitForSeconds(audio.clip.length);
+                this.gameObject.SetActive(false);
+            }
 
             //-------------------------------------------------
             // Called when a Hand stops hovering over this object
