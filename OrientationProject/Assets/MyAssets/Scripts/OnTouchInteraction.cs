@@ -19,6 +19,9 @@ namespace Valve.VR.InteractionSystem.Sample
             private AudioSource audio;
 
             public GameObject sphereAndLaser;
+
+            [SerializeField]
+            public string animationStateName;
             Animator anim;
         //-------------------------------------------------
         void Awake()
@@ -35,8 +38,9 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 this.gameObject.GetComponent<Animator>().enabled = false;
                 if(this.gameObject.tag == "StartSphere"){
-                        anim.Play("FirstMainAnim");
+                        anim.Play(animationStateName);
                         this.GetComponent<MeshRenderer>().enabled = false;
+                        this.transform.position = new Vector3(this.transform.position.x, 27, this.transform.position.z);
                 }
 
                 audio.Play();

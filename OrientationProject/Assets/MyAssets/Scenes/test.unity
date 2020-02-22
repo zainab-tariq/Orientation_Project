@@ -7237,6 +7237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereAndLaser: {fileID: 181615868}
+  animationStateName: FirstMainAnim
 --- !u!114 &730903363
 MonoBehaviour:
   m_ObjectHideFlags: 0
