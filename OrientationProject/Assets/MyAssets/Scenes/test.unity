@@ -1186,6 +1186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_R11
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &156664552 stripped
@@ -2208,6 +2213,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489153253000819142, guid: 2990b63644ccb0d4da4e6dfafec31d87,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489153253000819142, guid: 2990b63644ccb0d4da4e6dfafec31d87,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.62706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489153253000819142, guid: 2990b63644ccb0d4da4e6dfafec31d87,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -27.78569
       objectReference: {fileID: 0}
     - target: {fileID: 4489153253319070552, guid: 2990b63644ccb0d4da4e6dfafec31d87,
         type: 3}
@@ -4063,6 +4083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_L8
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &302520709 stripped
@@ -4323,6 +4348,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_L5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -4652,6 +4682,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_L1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -5296,6 +5331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_L6
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &513444408 stripped
@@ -5741,6 +5781,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_L3
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &619572794 stripped
@@ -5870,6 +5915,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_L11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -6458,6 +6508,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_R7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -7113,6 +7168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_R10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -8744,7 +8804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &935210074
 Transform:
   m_ObjectHideFlags: 0
@@ -9157,6 +9217,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_L9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -10759,6 +10824,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_R4
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &1177716463 stripped
@@ -11015,6 +11085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_R1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -12042,6 +12117,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_R5
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &1372756270 stripped
@@ -13048,6 +13128,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_R3
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &1541109366 stripped
@@ -13417,6 +13502,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_R9
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &1561062883 stripped
@@ -13784,6 +13874,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_L10
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &1615605803 stripped
@@ -14120,6 +14215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_L2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -15353,6 +15453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_R6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -16598,6 +16703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_L4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -18042,6 +18152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserLine_L7
       objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
 --- !u!4 &2051737331 stripped
@@ -18115,7 +18230,7 @@ PrefabInstance:
     - target: {fileID: 8741385272493559530, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 30.1
+      value: 40.2
       objectReference: {fileID: 0}
     - target: {fileID: 8741385272493559530, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
         type: 3}
@@ -18126,6 +18241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559533, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8741385272493559533, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
         type: 3}
@@ -18167,10 +18287,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 770a9d93efec5914982284b53a0089dd, type: 2}
+    - target: {fileID: 8741385272493559533, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.09096817
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559533, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559533, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0.18902436
+      objectReference: {fileID: 0}
     - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
         type: 3}
       propertyPath: m_Name
       value: LaserLine_R2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
@@ -18550,6 +18690,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserLine_R8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741385272493559535, guid: 90ac8eeb8377c9c48a127fe25b0bca9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ac8eeb8377c9c48a127fe25b0bca9d, type: 3}
