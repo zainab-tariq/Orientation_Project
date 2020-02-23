@@ -4126,9 +4126,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd67fabba51e354bb0bd8cc206beb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportAreaHighlight: {fileID: 0}
-  currentColorMaterial: {fileID: 0}
-  teleportArcMaterial: {fileID: 0}
+  Teleporting: {fileID: 1146370762}
+  teleportAreaHighlight: {fileID: 2100000, guid: a8cac5516702311429fe7478ff4d7d05,
+    type: 2}
+  currentColorMaterial: {fileID: 2100000, guid: 8769387f5b3e2465f92145857011db4f,
+    type: 2}
 --- !u!4 &328969381
 Transform:
   m_ObjectHideFlags: 0
@@ -10559,6 +10561,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1146370762 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11445746, guid: 7a135b1a2cb9c8f488d4dd00c55ab283,
+    type: 3}
+  m_PrefabInstance: {fileID: 2104472891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f260935093f73f241bfaa1578e5e5506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1153764692 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3751797464454445949, guid: 55b0c603ead224d44a453b34e2331a35,
