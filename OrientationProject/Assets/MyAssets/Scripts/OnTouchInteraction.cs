@@ -16,19 +16,25 @@ namespace Valve.VR.InteractionSystem.Sample
             private Hand.AttachmentFlags attachmentFlags = Hand.defaultAttachmentFlags & (~Hand.AttachmentFlags.SnapOnAttach) & (~Hand.AttachmentFlags.DetachOthers) & (~Hand.AttachmentFlags.VelocityMovement);
 
             private Interactable interactable;
-            private AudioSource audio;
-
-            public GameObject sphereAndLaser;
+            private AudioSource _audio;
+            [Header("Animation")]
+            public GameObject AnimatedGameObject;
 
             [SerializeField]
-            public string animationStateName;
+            public string AnimationStateName;
             Animator anim;
+            [Header("Interactable Sphere")]
+            public float TargetYPos = 24;
+            [SerializeField]
+            private float speed = 1;
+            private Vector3 target;
         //-------------------------------------------------
         void Awake()
             {
-                anim = sphereAndLaser.GetComponent<Animator>();
+                anim = AnimatedGameObject.GetComponent<Animator>();
                 interactable = this.GetComponent<Interactable>();
-                audio = this.GetComponent<AudioSource>();
+                _audio = this.GetComponent<AudioSource>();
+                target = new Vector3(this.transform.position.x, TargetYPos, this.transform.position.z);
             }
 
             //-------------------------------------------------
@@ -38,17 +44,18 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 this.gameObject.GetComponent<Animator>().enabled = false;
                 if(this.gameObject.tag == "StartSphere"){
-                        anim.Play(animationStateName);
+                        anim.Play(AnimationStateName);
                         this.GetComponent<MeshRenderer>().enabled = false;
-                        this.transform.position = new Vector3(this.transform.position.x, 27, this.transform.position.z);
+                        this.transform.position = new Vector3(this.transform.position.x, TargetYPos, this.transform.position.z); // set y üosition to a fixed position
+                        //transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed); //move towards a fixed y postion  
                 }
 
-                audio.Play();
+                _audio.Play();
                 //StartCoroutine("waitTillAudioFinish"); //deactivate gameobject once the audio is played
             }
 
             IEnumerator waitTillAudioFinish(){
-                yield return new WaitForSeconds(audio.clip.length);
+                yield return new WaitForSeconds(_audio.clip.length);
                 this.gameObject.SetActive(false);
             }
 

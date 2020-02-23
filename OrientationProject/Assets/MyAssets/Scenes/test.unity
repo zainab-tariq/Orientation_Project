@@ -1288,6 +1288,7 @@ Transform:
   - {fileID: 1974047152}
   - {fileID: 231455675}
   - {fileID: 935210074}
+  - {fileID: 246764295}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2617,8 +2618,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246764294}
   m_LocalRotation: {x: 0.00000014901161, y: -0.7071068, z: 0.7071068, w: 0.00000014901161}
-  m_LocalPosition: {x: -23.697, y: 16.5, z: 22.34}
-  m_LocalScale: {x: 0.02528985, y: 0.065011136, z: 0.6904609}
+  m_LocalPosition: {x: -63.61998, y: 22.475538, z: 19.573479}
+  m_LocalScale: {x: 0.078077324, y: 0.20070884, z: 2.1316595}
   m_Children:
   - {fileID: 107311581}
   - {fileID: 1593738162}
@@ -2642,8 +2643,8 @@ Transform:
   - {fileID: 1682840050}
   - {fileID: 523486572}
   - {fileID: 1885376993}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 181615870}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &259157602
 PrefabInstance:
@@ -4096,6 +4097,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 302520708}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &328969379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328969381}
+  - component: {fileID: 328969380}
+  m_Layer: 0
+  m_Name: Gameplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &328969380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328969379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd67fabba51e354bb0bd8cc206beb37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAreaHighlight: {fileID: 0}
+  currentColorMaterial: {fileID: 0}
+  teleportArcMaterial: {fileID: 0}
+--- !u!4 &328969381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328969379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.65630114, y: 4.6437426, z: 5.6035776}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &329177694
 GameObject:
   m_ObjectHideFlags: 0
@@ -5619,7 +5666,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 25.787, y: -214.64699, z: -177.51901}
 --- !u!1 &581009592 stripped
 GameObject:
@@ -6229,7 +6276,7 @@ PrefabInstance:
     - target: {fileID: 6472714936414552077, guid: d7b097c1557c9435eb6331f5d028db7f,
         type: 3}
       propertyPath: m_Name
-      value: Static_Laser (12)
+      value: Static_Laser (22)
       objectReference: {fileID: 0}
     - target: {fileID: 6472714936414552077, guid: d7b097c1557c9435eb6331f5d028db7f,
         type: 3}
@@ -6341,7 +6388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4315466328629124, guid: a84b6f45e102f3047accd75c1a06affe, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4315466328629124, guid: a84b6f45e102f3047accd75c1a06affe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7236,8 +7283,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d418321421c0742a49ac2aeab8218d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphereAndLaser: {fileID: 181615868}
-  animationStateName: FirstMainAnim
+  AnimatedGameObject: {fileID: 181615868}
+  AnimationStateName: FirstMainAnim
+  TargetYPos: 24
+  speed: 1
 --- !u!114 &730903363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7362,7 +7411,7 @@ Transform:
   m_LocalScale: {x: 1.7220389, y: 1.7220387, z: 1.7220393}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &730903368
 AudioSource:
@@ -10674,7 +10723,7 @@ PrefabInstance:
     - target: {fileID: 6472714936414552077, guid: d7b097c1557c9435eb6331f5d028db7f,
         type: 3}
       propertyPath: m_Name
-      value: Static_Laser (14)
+      value: Static_Laser (20)
       objectReference: {fileID: 0}
     - target: {fileID: 6472714936414552077, guid: d7b097c1557c9435eb6331f5d028db7f,
         type: 3}
@@ -10963,7 +11012,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1209441287
 PrefabInstance:
@@ -11237,7 +11286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4315466328629124, guid: a84b6f45e102f3047accd75c1a06affe, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4315466328629124, guid: a84b6f45e102f3047accd75c1a06affe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11626,7 +11675,7 @@ PrefabInstance:
     - target: {fileID: 6472714936414552077, guid: d7b097c1557c9435eb6331f5d028db7f,
         type: 3}
       propertyPath: m_Name
-      value: Static_Laser (13)
+      value: Static_Laser (21)
       objectReference: {fileID: 0}
     - target: {fileID: 6472714936414552077, guid: d7b097c1557c9435eb6331f5d028db7f,
         type: 3}
@@ -16204,7 +16253,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 55b0c603ead224d44a453b34e2331a35,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 55b0c603ead224d44a453b34e2331a35,
         type: 3}
@@ -18461,7 +18510,7 @@ PrefabInstance:
     - target: {fileID: 6472714936414552077, guid: d7b097c1557c9435eb6331f5d028db7f,
         type: 3}
       propertyPath: m_Name
-      value: Static_Laser (15)
+      value: Static_Laser (25)
       objectReference: {fileID: 0}
     - target: {fileID: 6472714936414552077, guid: d7b097c1557c9435eb6331f5d028db7f,
         type: 3}
