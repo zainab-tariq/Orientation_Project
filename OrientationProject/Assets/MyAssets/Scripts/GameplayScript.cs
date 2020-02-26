@@ -30,7 +30,7 @@ public class GameplayScript : MonoBehaviour
             Teleporting.pointerValidColor = currrentColor;
             teleportPointerMaterial.SetColor("_TintColor", currrentColor);
             Teleporting.pointHighlightedMaterial.SetColor("_TintColor", currrentColor);
-            //teleportArcMaterial.SetColor("tintColor", currrentColor); 
+            //teleportArcMaterial.SetColor("tintColor", currrentColor);  
         }
     }
 }
