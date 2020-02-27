@@ -7265,14 +7265,14 @@ GameObject:
   - component: {fileID: 730903367}
   - component: {fileID: 730903366}
   - component: {fileID: 730903365}
-  - component: {fileID: 730903362}
   - component: {fileID: 730903364}
+  - component: {fileID: 730903362}
   - component: {fileID: 730903363}
   - component: {fileID: 730903368}
   - component: {fileID: 730903369}
   m_Layer: 0
   m_Name: SphereInteractionExample
-  m_TagString: StartSphere
+  m_TagString: Sphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7293,6 +7293,7 @@ MonoBehaviour:
   AnimationStateName: FirstMainAnim
   TargetYPos: 24
   speed: 1
+  disappearOnHover: 0
 --- !u!114 &730903363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7342,7 +7343,7 @@ MonoBehaviour:
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
   handFollowTransform: 1
-  highlightOnHover: 0
+  highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
 --- !u!23 &730903364
@@ -7363,7 +7364,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 363b7acf25398684c82256cc8cc3d4bc, type: 2}
   - {fileID: 2100000, guid: 363b7acf25398684c82256cc8cc3d4bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
