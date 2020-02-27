@@ -4857,10 +4857,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 283115372}
+  sphereTranslateSpeed: 1
   orbitDistance: 1
   orbitDegreesPerSec: 180
   relativeDistance: {x: 0, y: 0, z: 0}
-  once: 1
+  yPosition: 0
 --- !u!1 &446001590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 62548417199500661, guid: 55b0c603ead224d44a453b34e2331a35,
@@ -7266,6 +7267,7 @@ GameObject:
   - component: {fileID: 730903366}
   - component: {fileID: 730903365}
   - component: {fileID: 730903364}
+  - component: {fileID: 730903370}
   - component: {fileID: 730903362}
   - component: {fileID: 730903363}
   - component: {fileID: 730903368}
@@ -7535,6 +7537,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &730903370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730903361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925603b8b3273154fb4aefdc4c45f5f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 240646212}
+  sphereTranslateSpeed: 1
+  orbitDistance: 0.5
+  orbitDegreesPerSec: 15
+  relativeDistance: {x: 0, y: 0, z: 0}
+  yPosition: 0
 --- !u!1001 &732650473
 PrefabInstance:
   m_ObjectHideFlags: 0
