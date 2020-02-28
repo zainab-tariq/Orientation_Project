@@ -78,7 +78,9 @@ namespace Valve.VR.InteractionSystem.Sample
                 }
                 this.GetComponent<MeshRenderer>().enabled = false;
                 this.transform.position = new Vector3(this.transform.position.x, TargetYPos, this.transform.position.z);
-                _audio.Play();
+                if(_audio != null){
+                    _audio.Play();
+                }
             }
         }
 

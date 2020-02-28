@@ -13,16 +13,16 @@ public class OrbitPlayer : MonoBehaviour
 
     void Start()
     {
-         if (target != null)
+        if (target != null)
         {
             //// to do translate the spehre to the orbit position 
             //// example: transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * sphereTranslateSpeed);
             // orbit around target gameObject 
             //relativeDistance = transform.position - target.position;
             relativeDistance = new Vector3(transform.position.x - target.position.x, yPosition, transform.position.z - target.position.z);
-            
+
         }
-        
+
     }
 
     void Orbit()
@@ -43,7 +43,16 @@ public class OrbitPlayer : MonoBehaviour
 
     void LateUpdate()
     {
-        Orbit();
-
+            Orbit();
+            /*
+        if (transform.position == relativeDistance)
+        {
+            Orbit();
+        }
+        else
+        {
+            //transform.position = Vector3.MoveTowards(transform.position, relativeDistance, Time.deltaTime * sphereTranslateSpeed);
+        }
+        */
     }
 }
