@@ -40,12 +40,11 @@ https://github.com/zainab-tariq/Orientation_Project/wiki/Inspiration-and-Referen
 * The light movement/animation change according to the position of the user
 * The user can interact with the spheres moving around the user
 * There is audio attached to single objects e.g spheres and upon interaction with these objects different sounds are played
-* ~~The scale of the installation can be changed~~
 * Ambient light and music to make the experience immersive
-* Tutorial to show the interaction possibilities +
-* At the start of the experience the user is in a hallway +
-* Implementation of fog +
-* Spatial audio +
+* Tutorial to show the interaction possibilities 
+* At the start of the experience the user is in a hallway 
+* Implementation of fog 
+* Spatial audio 
 
   
 ---
