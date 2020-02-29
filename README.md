@@ -26,24 +26,27 @@ https://github.com/zainab-tariq/Orientation_Project/wiki/Inspiration-and-Referen
 ## Wost Case
 
 * The user can experience an audiovisual installation
-* The user can move in a room and can see a light show 
-* There are sphere extended between the laser lights and the lights shine on spheres making varying shapes 
-* Implementation of fog into the light show 
+* The user can move in a room and can see a light show
+* There are sphere extended between the laser lights and the lights shine on spheres making varying shapes
+* ~~Implementation of fog~~
 * Animation of light sources
 * Implementation of audio which is created for the installation
 * Lights move in sync with the audio
-* The user can manipulate the lights by interacting with different sphere like objects within the environment 
+* The user can manipulate the lights by interacting with different sphere like objects within the environment
 * The spheres are animated and can detach themselves and move around in space
-
 
 ## Best Case
 
 * The light movement/animation change according to the position of the user
 * The user can interact with the spheres moving around the user
 * There is audio attached to single objects e.g spheres and upon interaction with these objects different sounds are played
-* The scale of the installation can be changed
+* ~~The scale of the installation can be changed~~
 * Ambient light and music to make the experience immersive
-* Tutorial to show the interaction possibilities  
+* Tutorial to show the interaction possibilities +
+* At the start of the experience the user is in a hallway +
+* Implementation of fog +
+* Spatial audio +
+
   
 ---
 
