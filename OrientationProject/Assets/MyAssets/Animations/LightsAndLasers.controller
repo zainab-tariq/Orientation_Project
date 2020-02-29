@@ -269,19 +269,22 @@ AnimatorStateMachine:
     m_Position: {x: 360, y: 340, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6924262424532512532}
-    m_Position: {x: 160, y: 450, z: 0}
+    m_Position: {x: 110, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5638044359869872207}
-    m_Position: {x: 470, y: 590, z: 0}
+    m_Position: {x: 120, y: 540, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3766847497267950238}
     m_Position: {x: 800, y: 530, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8449991694535372424}
-    m_Position: {x: 460, y: 520, z: 0}
+    m_Position: {x: 120, y: 470, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4933169094198751250}
-    m_Position: {x: 145, y: 625, z: 0}
+    m_Position: {x: 360, y: -20, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 285314165590122902}
+    m_Position: {x: 380, y: 70, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -320,6 +323,32 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1102 &285314165590122902
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: testCubesAnim
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 4f32f1e885680cd4f9c11f0ea65455c0, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &4933169094198751250
 AnimatorState:
   serializedVersion: 5
