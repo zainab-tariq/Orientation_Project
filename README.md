@@ -28,7 +28,6 @@ https://github.com/zainab-tariq/Orientation_Project/wiki/Inspiration-and-Referen
 * The user can experience an audiovisual installation
 * The user can move in a room and can see a light show
 * There are sphere extended between the laser lights and the lights shine on spheres making varying shapes
-* ~~Implementation of fog~~
 * Animation of light sources
 * Implementation of audio which is created for the installation
 * Lights move in sync with the audio
