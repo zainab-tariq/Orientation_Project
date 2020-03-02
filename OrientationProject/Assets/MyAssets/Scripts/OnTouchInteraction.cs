@@ -29,10 +29,7 @@ namespace Valve.VR.InteractionSystem.Sample
         //-------------------------------------------------
         void Awake()
         {   
-            if(anim != null)
-            {
             anim = AnimatedGameObject.GetComponent<Animator>();
-            }
             interactable = this.GetComponent<Interactable>();
             _audio = this.GetComponent<AudioSource>();
             target = new Vector3(this.transform.position.x, TargetYPos, this.transform.position.z);
