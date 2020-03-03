@@ -96,6 +96,7 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 if (startingGrabType != GrabTypes.None && this.gameObject.tag == "Sphere")
                 {
+                    StartCoroutine("waitBeforeAnimationStarts");
                     if (anim != null)
                     {
                         anim.Play(AnimationStateName);
@@ -108,6 +109,11 @@ namespace Valve.VR.InteractionSystem.Sample
                     }
                 }
             }
+        }
+
+        IEnumerator waitBeforeAnimationStarts()
+        {
+            yield return new WaitForSeconds(2);
         }
 
         private bool lastHovering = false;

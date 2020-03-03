@@ -7,10 +7,7 @@ namespace Valve.VR.InteractionSystem.Sample
     public class EndGame : MonoBehaviour
     {
         private float fadeDuration = 1f;
-        public GameObject[] interactables;
         public float waitTillGameEnds = 10;
-        private int objectsInteractedWith = 0;
-
         public int interactionNum;
         public int InteractionNumber
         {
