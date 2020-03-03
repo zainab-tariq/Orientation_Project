@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sphere
+  - HoverSphere
+  - End
   layers:
   - Default
   - TransparentFX

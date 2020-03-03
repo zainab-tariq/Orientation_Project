@@ -362,5 +362,6 @@ namespace Valve.VR.InteractionSystem
             if (highlightHolder != null)
                 Destroy(highlightHolder);
         }
+
     }
 }

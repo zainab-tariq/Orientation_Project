@@ -25,14 +25,29 @@ namespace Valve.VR.InteractionSystem.Sample
         private float speed = 1;
         [SerializeField]
         private bool disappearOnHover = false;
-
+        private bool is_disabled = false;
+        public bool interacted
+        {
+            get { return is_disabled; }
+        }
+        private EndGame endGameScript;
         //-------------------------------------------------
         void Awake()
-        {   
-            anim = AnimatedGameObject.GetComponent<Animator>();
+        {
+            if (anim != null)
+            {
+                anim = AnimatedGameObject.GetComponent<Animator>();
+            }
             interactable = this.GetComponent<Interactable>();
-            _audio = this.GetComponent<AudioSource>();
+            if (_audio != null)
+            {
+                _audio = this.GetComponent<AudioSource>();
+            }
+
             target = new Vector3(this.transform.position.x, TargetYPos, this.transform.position.z);
+
+            GameObject endGameObject = GameObject.FindGameObjectWithTag("End");
+            endGameScript = endGameObject.GetComponent<EndGame>();
         }
 
         //-------------------------------------------------
@@ -40,21 +55,28 @@ namespace Valve.VR.InteractionSystem.Sample
         //-------------------------------------------------
         private void OnHandHoverBegin(Hand hand)
         {
-            if(this.gameObject.GetComponent<Animator>() != null){
+            if (this.gameObject.GetComponent<Animator>() != null)
+            {
                 this.gameObject.GetComponent<Animator>().enabled = false;
             }
-
-            if (this.gameObject.tag == "Sphere" && disappearOnHover)
+            if (is_disabled == false)
             {
-                if (anim != null)
+                if (this.gameObject.tag == "HoverSphere" && disappearOnHover)
                 {
-                    anim.Play(AnimationStateName);
+                    if (anim != null)
+                    {
+                        anim.Play(AnimationStateName);
+                    }
+                    this.GetComponent<MeshRenderer>().enabled = false;
+                    if (_audio != null)
+                    {
+                        _audio.Play();
+                    }
+                    endGameScript.InteractionNumber += 1; // number of interactions
+                    Debug.Log("interaction number: " + endGameScript.InteractionNumber);
+                    //StartCoroutine("waitTillAudioFinish"); //deactivate gameobject once the audio is played
+                    is_disabled = true;
                 }
-                this.GetComponent<MeshRenderer>().enabled = false;
-                this.transform.position = new Vector3(this.transform.position.x, TargetYPos, this.transform.position.z); // set y üosition to a fixed position
-                //transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed); //move towards a fixed y postion  
-                _audio.Play();
-                //StartCoroutine("waitTillAudioFinish"); //deactivate gameobject once the audio is played
             }
         }
 
@@ -70,16 +92,20 @@ namespace Valve.VR.InteractionSystem.Sample
         private void HandHoverUpdate(Hand hand)
         {
             GrabTypes startingGrabType = hand.GetGrabStarting();
-            if (startingGrabType != GrabTypes.None && this.gameObject.tag == "Sphere")
+            if (is_disabled == false)
             {
-                if (anim != null)
+                if (startingGrabType != GrabTypes.None && this.gameObject.tag == "Sphere")
                 {
-                    anim.Play(AnimationStateName);
-                }
-                this.GetComponent<MeshRenderer>().enabled = false;
-                this.transform.position = new Vector3(this.transform.position.x, TargetYPos, this.transform.position.z);
-                if(_audio != null){
-                    _audio.Play();
+                    if (anim != null)
+                    {
+                        anim.Play(AnimationStateName);
+                    }
+                    this.GetComponent<MeshRenderer>().enabled = false;
+                    is_disabled = true;
+                    if (_audio != null)
+                    {
+                        _audio.Play();
+                    }
                 }
             }
         }
