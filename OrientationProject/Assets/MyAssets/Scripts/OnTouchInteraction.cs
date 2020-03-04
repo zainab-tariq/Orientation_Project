@@ -34,15 +34,10 @@ namespace Valve.VR.InteractionSystem.Sample
         //-------------------------------------------------
         void Awake()
         {
-            if (anim != null)
-            {
+            if(AnimatedGameObject!= null)
                 anim = AnimatedGameObject.GetComponent<Animator>();
-            }
             interactable = this.GetComponent<Interactable>();
-            if (_audio != null)
-            {
-                _audio = this.GetComponent<AudioSource>();
-            }
+            _audio = this.GetComponent<AudioSource>();
 
             target = new Vector3(this.transform.position.x, TargetYPos, this.transform.position.z);
 
@@ -63,17 +58,12 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 if (this.gameObject.tag == "HoverSphere" && disappearOnHover)
                 {
-                    if (anim != null)
-                    {
-                        anim.Play(AnimationStateName);
-                    }
                     this.GetComponent<MeshRenderer>().enabled = false;
-                    if (_audio != null)
+                    if(_audio != null)
                     {
                         _audio.Play();
-                    }
+                    }    
                     endGameScript.InteractionNumber += 1; // number of interactions
-                    Debug.Log("interaction number: " + endGameScript.InteractionNumber);
                     //StartCoroutine("waitTillAudioFinish"); //deactivate gameobject once the audio is played
                     is_disabled = true;
                 }
@@ -96,24 +86,21 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 if (startingGrabType != GrabTypes.None && this.gameObject.tag == "Sphere")
                 {
-                    StartCoroutine("waitBeforeAnimationStarts");
-                    if (anim != null)
-                    {
-                        anim.Play(AnimationStateName);
-                    }
                     this.GetComponent<MeshRenderer>().enabled = false;
+                    StartCoroutine("waitAndStartAnimation");
                     is_disabled = true;
-                    if (_audio != null)
-                    {
-                        _audio.Play();
-                    }
                 }
             }
         }
 
-        IEnumerator waitBeforeAnimationStarts()
+        IEnumerator waitAndStartAnimation()
         {
             yield return new WaitForSeconds(2);
+
+            if(anim != null)
+                anim.Play(AnimationStateName);
+            if(_audio != null)    
+                _audio.Play();
         }
 
         private bool lastHovering = false;
