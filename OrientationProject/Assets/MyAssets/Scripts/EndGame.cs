@@ -6,6 +6,8 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class EndGame : MonoBehaviour
     {
+        public GameObject Player;
+        public Transform playerEndPos;
         private float fadeDuration = 1f;
         public float waitTillGameEnds = 10;
         public int interactionNum;
@@ -40,6 +42,7 @@ namespace Valve.VR.InteractionSystem.Sample
 
         IEnumerator waitTillAudioFinish()
         {
+            Player.transform.position = playerEndPos.transform.position;
             yield return new WaitForSeconds(waitTillGameEnds);
             FadeToBlack();
             StartCoroutine("waitAndEndGame");
