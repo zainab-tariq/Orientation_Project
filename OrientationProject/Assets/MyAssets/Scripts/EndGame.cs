@@ -6,10 +6,10 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class EndGame : MonoBehaviour
     {
-        public GameObject Player;
-        public Transform playerEndPos;
+        public GameObject canvas;
         private float fadeDuration = 1f;
         public float waitTillGameEnds = 10;
+        public float waitTillTextAppears = 5;
         public int interactionNum;
         public int InteractionNumber
         {
@@ -42,10 +42,16 @@ namespace Valve.VR.InteractionSystem.Sample
 
         IEnumerator waitTillAudioFinish()
         {
-            Player.transform.position = playerEndPos.transform.position;
+            StartCoroutine("waitAndShowCanvas");
             yield return new WaitForSeconds(waitTillGameEnds);
             FadeToBlack();
             StartCoroutine("waitAndEndGame");
+        }
+
+        IEnumerator waitAndShowCanvas()
+        {
+            yield return new WaitForSeconds(waitTillTextAppears);
+            canvas.SetActive(true);
         }
         IEnumerator waitAndEndGame()
         {
