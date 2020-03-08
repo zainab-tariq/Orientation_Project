@@ -41,7 +41,7 @@ namespace Valve.VR.InteractionSystem.Sample
 		//-------------------------------------------------
 		private void OnHandHoverBegin( Hand hand )
 		{
-			generalText.text = "Pull the Trigger";
+			generalText.text = "Press Trigger Button";
 		}
 
 

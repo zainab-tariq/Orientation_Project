@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class OrbitPlayer : MonoBehaviour
 {
-    public Transform target;
+    public GameObject targetGO;
+    private Transform target;
     public float sphereTranslateSpeed = 1.0f;
     public float orbitDistance = 2.0f;
     public float orbitDegreesPerSec = 180.0f;
     private Vector3 relativeDistance = Vector3.zero;
     private Vector3 playerPosition;
     public float yPosition = 0;
+
+    void Start(){
+        targetGO = GameObject.Find("/Player/NoSteamVRFallbackObjects/FallbackObjects"); //player position for no VR
+        //targetGO = GameObject.Find("/Player/SteamVRObjects"); // player position for VR
+    }
+
 
 
     void Orbit()
@@ -27,6 +34,7 @@ public class OrbitPlayer : MonoBehaviour
 
     void LateUpdate()
     {
+        target = targetGO.transform;
             //Orbit();
             
         if (transform.position.z >= target.position.z - orbitDistance)

@@ -9,7 +9,12 @@ namespace Valve.VR.InteractionSystem.Sample
         [RequireComponent(typeof(Interactable))]
     public class LoadScene : MonoBehaviour
     {
+        private GameObject objectNotToBeDestroyed;
 
+        void Awake(){
+            objectNotToBeDestroyed = GameObject.Find("Teleporting");
+            DontDestroyOnLoad(objectNotToBeDestroyed);
+        }
         private float fadeDuration = 1f;
 
         private void HandHoverUpdate(Hand hand)
