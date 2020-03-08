@@ -19,8 +19,8 @@ public class GripInput : MonoBehaviour
         if (GetGrab())
         {
             print("Grab " + handType);
-            //FadeToBlack();
-            //StartCoroutine("waitAndEndGame");
+            FadeToBlack();
+            StartCoroutine("waitAndEndGame");
         }
     }
      IEnumerator waitAndEndGame()

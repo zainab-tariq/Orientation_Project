@@ -14,8 +14,8 @@ public class OrbitPlayer : MonoBehaviour
     public float yPosition = 0;
 
     void Start(){
-        targetGO = GameObject.Find("/Player/NoSteamVRFallbackObjects/FallbackObjects"); //player position for no VR
-        //targetGO = GameObject.Find("/Player/SteamVRObjects"); // player position for VR
+        //targetGO = GameObject.Find("/Player/NoSteamVRFallbackObjects/FallbackObjects"); //player position for no VR
+        targetGO = GameObject.Find("Player"); // player position for VR
     }
 
 

@@ -10,10 +10,13 @@ namespace Valve.VR.InteractionSystem.Sample
     public class LoadScene : MonoBehaviour
     {
         private GameObject objectNotToBeDestroyed;
+        private GameObject canvas;
 
         void Awake(){
             objectNotToBeDestroyed = GameObject.Find("Teleporting");
             DontDestroyOnLoad(objectNotToBeDestroyed);
+            canvas = GameObject.Find("Canvas");
+            DontDestroyOnLoad(canvas);
         }
         private float fadeDuration = 1f;
 

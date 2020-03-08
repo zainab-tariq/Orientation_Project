@@ -6,7 +6,8 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class EndGame : MonoBehaviour
     {
-        public GameObject canvas;
+        private GameObject canvas;
+        private GameObject particleSystem;
         private float fadeDuration = 1f;
         public float waitTillGameEnds = 10;
         public float waitTillTextAppears = 5;
@@ -29,12 +30,17 @@ namespace Valve.VR.InteractionSystem.Sample
         private void Start()
         {
             endGameEvent += OnInteractionMax;
+            particleSystem = GameObject.Find("Dust");
+            canvas = GameObject.Find("Canvas");
         }
 
 
         public void OnInteractionMax(int val)
         {
             if(interactionNum == 6){
+                if(particleSystem != null){
+                    particleSystem.SetActive(false);
+                }
                 Debug.Log("end game now!");
                 StartCoroutine("waitTillAudioFinish");
             }
@@ -51,14 +57,15 @@ namespace Valve.VR.InteractionSystem.Sample
         IEnumerator waitAndShowCanvas()
         {
             yield return new WaitForSeconds(waitTillTextAppears);
-            canvas.SetActive(true);
+            if(canvas != null)
+                canvas.transform.GetChild(0).gameObject.SetActive(true);
         }
         IEnumerator waitAndEndGame()
         {
              //wait for fade to finish
             yield return new WaitForSeconds(fadeDuration + 3);
-            //Application.Quit();
-            UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit();
+            //UnityEditor.EditorApplication.isPlaying = false;
             
         }
         private void FadeToBlack()
