@@ -1,4 +1,4 @@
-# Orientation Project: Audiovisual installation in VR  
+# Orientation Project: Abyss (Audiovisual installation in VR)  
 
 Zainab Tariq
 
