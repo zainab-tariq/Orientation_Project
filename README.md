@@ -18,7 +18,7 @@ This project is inspired by visual artists such as Christopher Bauder and Shohei
 ---
 ## Walkthrough
 
-https://drive.google.com/file/d/1M762mYjEKoyJ3ophHjFseEhcXHL9SlyX/view
+https://drive.google.com/open?id=13QmjNQyRK9yRUjlEheiyAPsKQl-YycFW
 
 ---
 ## Reference images
