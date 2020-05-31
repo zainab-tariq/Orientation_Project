@@ -11,9 +11,10 @@ Winter Term 19/20
 ---
 ## Description
 
-The main concept of this project is to create a first-person Virtual Reality application, where the user can experience an immersive and interactive audiovisual installation. He/she finds himself/herself in a dimly lit room containing multiple light/laser rays creating multidimensional light drawings. These drawings can be seen as vector drawings. The lights move in accordance to sounds that the user can hear. The light rays are animated and react to the user, for instance when the user changes his/her position or moves within a specified space. Moreover, the user is able to manipulate the lights by interacting with different objects. 
+The main concept of this project is to create a first-person Virtual Reality application, where the user can experience an immersive and interactive audiovisual installation. He/she finds himself/herself in a dimly lit room containing multiple light/laser rays creating multidimensional light drawings. These drawings can be seen as vector drawings. The lights move in accordance to sounds that the user can hear. The light rays are animated and react to the user, for instance when the user changes his/her position or moves within a specified space. Moreover, the user is able to manipulate the lights by interacting with different objects.
 
 This project is inspired by visual artists such as Christopher Bauder and Shohei Fujimoto. The Audio-visual installations created by these artists are large scale installations, which take a lot of space and resources. The goal of this project is not only to provide the user with an artistic experience but also to make this type of installations accessible to a larger audience. Furthermore, the installation in VR gives the user a unique experience which is not possible in real life. This is achieved by breaking some laws of gravity and adding surreal elements to the environment. The enhance the immersiveness of the experience the users attention is caught by ambient lighting and music.
+
 
 ---
 ## Collaborator
